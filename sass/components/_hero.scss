@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+.container-hero {
+    max-width: 55%;
+    .title {
+        font-family: $primary-font;
+        font-size: 55px;
+        color: $dar-blue;
+    }
+    .subtitle {
+        font-family: $primary-font;
+        color: $gray-font;
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 50px;
+    }
+    .button-box{ 
+        display: flex;
+        margin-bottom: 50px;
+
+        ul {
+            @include reset-list;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+
+            .button {
+                font-family: $primary-font;
+                
+            
+
+                img {
+                    width: 32px;
+
+                }
+            }
+        }
+        
+
+    }
+}

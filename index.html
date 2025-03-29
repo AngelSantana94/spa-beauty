@@ -4,14 +4,88 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Spa and Beauty</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <div class="container">
+        <div class="container-lef"></div>
+        <div class="container-nav">
+          <a href="#">
+            <img class="container-nav-img" src="./img/glowqueen-logo.svg" alt="logo GlowQueen">
+          </a>
+          <nav class="principal-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Facilities</a></li>
+              <li><a href="#">More <img src="./img/flecha-abajo.svg" alt=""></a>
+                <nav class="sub-nav">
+                  <ul>
+                    <li><a href="#">More 1</a></li>
+                    <li><a href="#">More 2</a></li>
+                    <li><a href="#">More 3</a></li>
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+          <div class="login-nav">
+            <ul>
+              <li><a href="#"><img src="./img/search-icon.svg" alt="icono de lupa"></a></li>
+              <li><a href="#"><img src="./img/back-icon.svg" alt=""></a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-hero">
+          <h1 class="title">Bring back the beauty and glow of your skin</h1>
+          <p class="subtitle">We provide you various treatments from head to toe using the best product, advanced technology, and affordable price
+          </p>
+          <div class="button-box">
+            <ul>
+              <li>
+                <a class="button" href="#">Book Now</a>
+              </li>
+              <li>
+                <a class="button" href="#">
+                  <img src="./img/play-button.svg" alt=""> Watch Video
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-items">
+          <article class="item">
+            <img src="./img/face-icon.svg" alt="">
+            <p class="number">15+ </p>
+            <p class="description">Special Treatment</p>
+          </article>
+
+          <article class="item">
+            <img src="./img/lotus-icon.svg" alt="">
+            <p class="number">25+</p>
+            <p class="description">Professional Therapist</p>
+          </article>
+
+          <article class="item">
+            <img src="./img/morter-icon.svg" alt="">
+            <p class="number">100%</p>
+            <p class="description">Herbal Cream Formula</p>
+          </article>
+        </div>
+
+      </div>
+
+    </header>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
