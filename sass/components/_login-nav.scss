@@ -1,0 +1,57 @@
+@use "../abstracts" as *;
+.login-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: -45px;
+    
+    ul {
+        display: flex;
+        @include reset-list;
+        gap: 45px;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            white-space: nowrap;
+            a {
+                display: block;
+                font-family: $primary-font;
+                color: $dar-blue;
+                font-size: 15px;
+                padding: 0 10px;
+                text-align: left;
+            }
+
+            .img-back {
+                width: 18px;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            .img-search {
+                width: 25px;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            .signin-button {
+                text-decoration: underline;
+                font-weight: 400 ;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+            .button-dark-blue {
+                padding: 15px 35px;
+                color: white;
+            }
+        }
+    }
+    
+    
+}

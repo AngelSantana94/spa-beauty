@@ -4,9 +4,30 @@
 @use "../abstracts" as *;
 
 .header {
-    background-image: url(../../img/hero-img.png);
-    background-size: 1200px;
-    background-repeat: no-repeat;
-    background-position-x: 300px;
+    position: relative;
+    min-height: 100vh; 
+    display: flex;
+
+    &::before {
+        content: '';
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 65%;
+        height: 80%;
+        background-color: $gray-bg;
+        z-index: -3;
+    }
+        
+    &::after {
+    content: '';
+    position: absolute; 
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 80%;
+    background-color: $green-bg;
+    z-index: -3;
+    }
 
 }

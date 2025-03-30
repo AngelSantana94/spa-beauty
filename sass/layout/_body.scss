@@ -1,6 +1,5 @@
 @use "../abstracts" as *;
 
 body {
-    background-color: $gray-bg;
-    max-width: 1500px;
+    font-family: $primary-font;
 }

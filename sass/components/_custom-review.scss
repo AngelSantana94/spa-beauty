@@ -1,0 +1,67 @@
+@use "../abstracts/" as *;
+
+.custom-review {
+    
+    &__article01 {
+        position: absolute;
+        top: 330px;
+        right: 20px;
+        max-width: 350px;
+        padding: 20px;
+        border-radius: 1rem;
+        background-color: $green-light;
+        line-height: 22px;
+        img {
+            max-width: 25px;
+            margin: 0;
+        }
+
+        .description {
+            font-size: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .name {
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+            color: $dar-blue;
+        }
+    }
+
+    &__article02 {
+        position: absolute;
+        bottom: 110px;
+        right: 120px;
+        max-width: 350px;
+        padding: 20px;
+        border-radius: 1rem;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        line-height: 22px;
+        box-shadow: 
+        inset 0 0 15px rgba(255, 255, 255, 0.5), /* Sombra interna blanca */
+        inset 0 0 20px rgba(255, 255, 255, 0.3), /* Otra capa de sombra interna */
+        0 4px 30px rgba(0, 0, 0, 0.1);
+        
+        .img {
+            max-width: 25px;
+            margin: 0;
+
+        }
+        
+        .description {
+            font-size: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .name {
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+            color: $dar-blue;
+        }
+    }
+}

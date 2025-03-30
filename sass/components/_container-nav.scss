@@ -1,52 +1,74 @@
 @use "../abstracts" as *;
 
-.container-nav{
+.container-nav {
+    max-width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    .container-nav-img{
-        box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    .container-nav-img {
+        max-width: 180px;
     }
-    .principal-nav{
+
+    .principal-nav {
         ul {
             display: flex;
             @include reset-list();
-            gap: 45PX;
+            gap: 45px;
             font-family: $primary-font;
             color: $dar-blue;
-            li a{
-                color: $dar-blue;
-                font-size: 18px;
-            }
 
-            .sub-nav {
-                display: none;
-                
-            }
-            &:hover .sub-nav {
-                display: flex;
-                flex-direction: row;
-            }
-        }
-    }
-
-    .login-nav {
-        ul {
-            display: flex;
-            @include reset-list;
-            gap: 25px;
-            align-items: center;
             li {
+                position: relative; 
+
                 a {
-                    font-family: $primary-font;
                     color: $dar-blue;
+                    font-size: 16px;
+                }
+
+                &.submenu {
+                    &:hover .sub-nav {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(0)
+                        
+                        
+                    }
+                }
+
+                .sub-nav {
+                    margin-top: 10px;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background: white;
+                    padding: 10px;
+                    width: max-content;
+                    background-color: $gray-bg;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(-10px);
+                    transition: opacity 0.2s , transform 1s , visibility 7s;
+                    transition-duration: 1.5s;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        background-color: $gray-bg;
+                        li {
+                            padding: 5px 10px;
+                            white-space: nowrap;
+                            a {
+                                padding: 5px 25px;
+                                opacity: 1; 
+                            }
+                        }
+                        
+                    }
+                    
                 }
             }
-
         }
-        
-        
     }
 }
