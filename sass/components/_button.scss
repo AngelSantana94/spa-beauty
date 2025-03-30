@@ -1,4 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-
+@use "abstracts" as *;
+.button-dark-blue {
+    @include button-dark-blue();
+} 
