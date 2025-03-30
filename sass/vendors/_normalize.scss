@@ -193,10 +193,11 @@ select { /* 1 */
  */
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+    appearance: button;
 }
 
 /**
@@ -287,9 +288,10 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+ [type="search"] {
+  -webkit-appearance: textfield; /* Para Safari y Chrome */
+  appearance: textfield; /* Propiedad estándar */
+  outline-offset: -2px; /* Ajuste del borde */
 }
 
 /**

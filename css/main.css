@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -174,6 +175,8 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  -moz-appearance: button;
+       appearance: button;
 }
 
 /**
@@ -256,8 +259,10 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield; /* Para Safari y Chrome */
+  -moz-appearance: textfield;
+       appearance: textfield; /* Propiedad estándar */
+  outline-offset: -2px; /* Ajuste del borde */
 }
 
 /**
